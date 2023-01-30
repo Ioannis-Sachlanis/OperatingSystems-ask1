@@ -1,2 +1,5 @@
 # OperatingSystems-ask1
 Two Processes, Parent &amp; Child with .txt file(>1000 lines)
+
+The exercise contains 2 main processes, parent and child, as requested in the statement. The parent process creates N+2 semaphores and a shared memory section, which contains the line being sent, the requests, as well as some extra information used to properly synchronize the processes. Each process makes some prints to stdout/stderr for smoother control of the programs operation, but a better control is done by the log files that are printed according to the requirements of the utterance as well.
+The user is prompted to launch the parent process, as in the example run below. The input file is required to have the same line size (with a maximum length of MAX_LINE_SIZE), because I preferred to use fseek for faster access to any point in the file I want. All requirements of the utterance are satisfied and the execution was tested with various input values. It was also checked for memory leaks without finding any of them.
